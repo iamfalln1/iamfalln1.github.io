@@ -1,0 +1,124 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  background: #111; /* dark background */
+  color: #fff;
+}
+
+/* Accent color */
+:root {
+  --accent-color: #ff6600; /* KTM orange */
+}
+
+/* HEADER */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 12%;   /* increased to balance the slash */
+  padding-right: 10%;
+  overflow: hidden;
+}
+
+/* Diagonal orange slash */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -25%;
+  width: 70%;
+  height: 140%;
+  background: var(--accent-color);
+  transform: skewX(-20deg);
+  z-index: 0;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;   /* slightly narrower for better spacing */
+}
+
+.hero-content h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 span {
+  color: var(--accent-color);
+  background: #111;
+  padding: 0 8px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ddd;
+}
+
+/* FOOTER */
+.site-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ede4e4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .site-header {
+    padding: 15px 20px;
+  }
+}
