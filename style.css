@@ -116,14 +116,14 @@ html, body {
 
   /* Change the span to white on mobile */
   .hero-content h1 span {
-    color: #ffff;        /* Sets font to white */
+    color: #fff;        /* Sets font to white */
     background: none;   /* Removes the black background box */
     padding: 0;         /* Removes extra spacing */
     display: inline;    /* Keeps it in the same line if space permits */
   }
 
   .hero-content p {
-    color: #ffff;
+    color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
   }
