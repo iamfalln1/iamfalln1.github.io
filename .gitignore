@@ -1,0 +1,20 @@
+# VS Code files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Project-specific (if applicable)
+node_modules/
+dist/
+build/
+.env
+
+# Logs
+*.log
