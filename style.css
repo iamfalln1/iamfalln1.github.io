@@ -111,7 +111,7 @@ html, body {
   }
 
   .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   /* Change the span to white on mobile */
@@ -126,6 +126,42 @@ html, body {
     color: #ffff;
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  /* Adjust the diagonal orange slash so it doesn't cover the whole screen */
+  .hero::before {
+    width: 100%;
+    right: -50%;
+  }
+
+  .site-header {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Change the span to white on mobile */
+  .hero-content h1 span {
+    color: #ffff;        /* Sets font to white */
+    background: none;   /* Removes the black background box */
+    padding: 0;         /* Removes extra spacing */
+    display: inline;    /* Keeps it in the same line if space permits */
+  }
+
+  .hero-content p {
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 200;
   }
 
   /* Adjust the diagonal orange slash so it doesn't cover the whole screen */
